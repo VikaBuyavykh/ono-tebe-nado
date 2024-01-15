@@ -1,0 +1,384 @@
+.page {
+    margin: 0 auto;
+    max-width: 1440px;
+    background: #FFF;
+}
+
+.header {
+    margin: 92px 50px;
+    max-width: 1340px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    max-width: 388px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    gap: 32px;
+    list-style: circle;
+}
+
+.header__list-item {
+    margin: 0;
+    color: #000;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__list-item:first-of-type {
+    list-style: none;
+}
+
+.header__logo {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contacts-container {
+    margin: 0;
+    max-width: 240px;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts__item {
+    margin: 0;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.content {
+    margin: 0;
+    width: 100%;    
+}
+
+.cover {
+    margin: 0;
+    width: 100%;
+    min-height: 757px;
+    background-image: url(../images/lotus-flower.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.overlay {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay_type_card {
+    padding: 50px 40px;
+    gap: 30px;
+}
+
+.overlay_type_cover {
+    padding: 165px 50px 0;
+}
+
+.cover__title {
+    margin: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.text-display {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.another-letter-spacing {
+    letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    margin: 0 0 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 78px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.cover__description-text {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    word-spacing: 10px;
+}
+
+.bet-button {
+    margin: 0;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lots {
+    margin: 180px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.lots__heading {
+    margin: 0;
+    margin-left: 40px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(450px, auto);
+    gap: 25px;
+    list-style: none;
+}
+
+.lots__card-item {
+    margin: 0;
+    position: relative;
+}
+
+.card {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.card_type_film {
+    background-image: url(../images/lots-lot1.png);
+}
+
+.card_type_book {
+    background-image: url(../images/lots-lot2.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/lots-lot3.png);
+}
+
+.card__title {
+    margin: 0;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.card__text {
+    margin: 0;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    z-index: 2;
+}
+
+.lots__look-more-link {
+    margin: 0;
+    margin-left: 40px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about {
+    margin: 0 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 240px auto;
+    gap: 8px 25px;
+}
+
+.about__logo {
+    margin: 0;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #000;
+    background-image: url(../images/logo-white.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    justify-self: center;
+}
+
+.about__title {
+    margin: 0;
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.about__text-section {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about__text {
+    margin: 0;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer {
+    margin: 0;
+    padding: 180px 50px 90px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 240px auto 240px;
+    gap: 50px;
+    justify-content: space-between; 
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__list-item-link {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+.footer__list-item-link_main {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/socials.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
